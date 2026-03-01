@@ -219,7 +219,7 @@ nav {
   animation: aura-pulse 6s ease-in-out infinite 0.6s;
 }
 
-@keyframes aura-pulse {
+@keyframes aura-pulse {}
   0%, 100% {
     opacity: 0.4;
     transform: translate(-50%, -50%) scale(1);
