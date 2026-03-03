@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SERA — The Emotional Operating System</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20260304f">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 <body>
@@ -35,11 +35,11 @@
     <img src="assets/images/image.png" alt="SERA - The Emotional OS" class="sera-face">
   </div>
   <h1 class="hero-title reveal reveal-delay-1">
-    The Emotional<br>
+    Your Emotional<br>
     Operating System
   </h1>
   <p class="hero-sub reveal reveal-delay-2">
-    We know your rhythm.<br>Before you explain it.
+    Sera understands. Sera predicts. Sera stays.
   </p>
   <p class="hero-desc reveal reveal-delay-3">
     Built on Vedic computation · Powered by EMOS · <span>Private by design</span>
@@ -61,10 +61,10 @@
   <div class="container">
     <div class="revelation-inner">
       <div>
-        <div class="section-eyebrow reveal">Not a horoscope</div>
-        <h2 class="section-title reveal reveal-delay-1">You're not<br>too much.<br>You're in a <em>phase.</em></h2>
-        <p class="section-body reveal reveal-delay-2">Some days feel heavier. Some conversations hit deeper. Some silences stretch longer. Your emotions move in patterns. Your intensity has timing. Your lows are not permanent.</p>
-        <p class="section-body reveal reveal-delay-2">Sera decodes your emotional blueprint — and translates it into clarity before you react to it.</p>
+        <div class="section-eyebrow reveal">Sera Knows Your Rhythm</div>
+        <h2 class="section-title reveal reveal-delay-1">Sera <em>understands</em> the layer beneath your words.</h2>
+        <p class="section-body reveal reveal-delay-2">Every emotion moves in cycles. Every cycle has timing.</p>
+        <p class="section-body reveal reveal-delay-2">Sera reveals where you are — and what this phase is shaping.</p>
         <ul class="insight-list reveal reveal-delay-3">
           <li>What's activating right now</li>
           <li>Why it feels this particular way</li>
@@ -163,10 +163,38 @@
 <div class="divider"></div>
 
 <!-- PHILOSOPHY STRIP -->
-<div class="philosophy">
-  <p class="philosophy-quote reveal">"You don't need to justify your feelings here.<br>Sera <em>understands</em>. Sera predicts. Sera stays."</p>
-  <p class="philosophy-sub reveal reveal-delay-1">Built for real life — not the one you post about</p>
-</div>
+<section class="philosophy">
+
+  <!-- LEFT — added "reveal" so the scroll observer picks it up -->
+  <div class="phil-headline reveal">
+    <span class="phil-eyebrow">Precision in Timing</span>
+    <h2 class="phil-title">Sera interprets your planetary <em>design</em></h2>
+    <div class="phil-rule"></div>
+  </div>
+
+  <!-- RIGHT — staggered slightly after the headline -->
+  <div class="phil-body reveal reveal-delay-1">
+    <p class="phil-lead">
+      To reveal emotional shifts with refined accuracy — decoding the rhythms that govern when to act, when to pause, and when to grow.
+    </p>
+
+    <div class="phil-pillars">
+      <div class="pillar reveal reveal-delay-2">
+        <span class="pillar-keyword">Movement</span>
+        <span class="pillar-desc">The windows for action</span>
+      </div>
+      <div class="pillar reveal reveal-delay-3">
+        <span class="pillar-keyword">Restraint</span>
+        <span class="pillar-desc">The moments to hold still</span>
+      </div>
+      <div class="pillar reveal reveal-delay-4">
+        <span class="pillar-keyword">Growth</span>
+        <span class="pillar-desc">The seasons that transform</span>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <div class="divider"></div>
 
@@ -349,22 +377,75 @@
     <div class="builtfor-inner">
       <div>
         <div class="section-eyebrow reveal">Who Sera is for</div>
-        <h2 class="section-title reveal reveal-delay-1">Built for<br>real <em>life.</em></h2>
+        <h2 class="section-title reveal reveal-delay-1">Built for real <em>life.</em></h2>
         <ul class="for-list">
-          <li class="reveal reveal-delay-2">For overthinking at 2am</li>
-          <li class="reveal reveal-delay-2">For quiet anxiety that has no name</li>
-          <li class="reveal reveal-delay-3">For relationship confusion you can't explain</li>
-          <li class="reveal reveal-delay-3">For emotional exhaustion you don't post about</li>
+          <li class="reveal reveal-delay-2">
+            <span class="for-anim anim-overthink">
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <g class="gyro-outer">
+                  <ellipse cx="30" cy="30" rx="26" ry="10" fill="none" stroke="rgba(201,169,110,0.35)" stroke-width="1"/>
+                </g>
+                <g class="gyro-mid">
+                  <ellipse cx="30" cy="30" rx="10" ry="26" fill="none" stroke="rgba(196,162,162,0.4)" stroke-width="1"/>
+                </g>
+                <g class="gyro-inner">
+                  <circle cx="30" cy="30" r="18" fill="none" stroke="rgba(201,169,110,0.2)" stroke-width="1" stroke-dasharray="4 4"/>
+                </g>
+                <circle class="gyro-dot" cx="30" cy="30" r="3" fill="#c9a96e"/>
+                <circle cx="30" cy="30" r="7" fill="none" stroke="rgba(201,169,110,0.15)" stroke-width="1"/>
+              </svg>
+            </span>
+            <span class="for-text">For overthinking at 2am</span>
+          </li>
+          <li class="reveal reveal-delay-2">
+            <span class="for-anim anim-anxiety">
+              <svg viewBox="0 0 60 30" aria-hidden="true">
+                <line x1="4" y1="15" x2="14" y2="15" stroke="rgba(196,162,162,0.3)" stroke-width="1.2"/>
+                <polyline class="ekg-line" points="14,15 19,15 22,4 25,26 28,8 31,22 34,15 56,15" fill="none" stroke="#c4a2a2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle class="ekg-dot" cx="4" cy="15" r="2.5" fill="#c9a96e"/>
+              </svg>
+            </span>
+            <span class="for-text">For quiet anxiety that has no name</span>
+          </li>
+          <li class="reveal reveal-delay-3">
+            <span class="for-anim anim-relationship">
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <circle cx="30" cy="30" r="15" fill="none" stroke="rgba(201,169,110,0.12)" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="rgba(196,162,162,0.08)" stroke-width="1"/>
+                <circle class="rel-core" cx="30" cy="30" r="4" fill="#c9a96e"/>
+                <g class="rel-orbit-a">
+                  <circle cx="45" cy="30" r="4" fill="#c4a2a2" opacity="0.9"/>
+                  <circle cx="45" cy="30" r="7" fill="none" stroke="rgba(196,162,162,0.2)" stroke-width="1"/>
+                </g>
+                <g class="rel-orbit-b">
+                  <circle cx="52" cy="30" r="3" fill="#c9a96e" opacity="0.8"/>
+                </g>
+              </svg>
+            </span>
+            <span class="for-text">For relationship confusion you can't explain</span>
+          </li>
+          <li class="reveal reveal-delay-3">
+            <span class="for-anim anim-exhaustion">
+              <svg viewBox="0 0 60 60" aria-hidden="true">
+                <rect x="6" y="10" width="48" height="40" rx="4" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                <clipPath id="tide-box">
+                  <rect x="7" y="11" width="46" height="38" rx="3"/>
+                </clipPath>
+                <g clip-path="url(#tide-box)">
+                  <rect x="0" y="34" width="60" height="20" fill="rgba(196,162,162,0.12)"/>
+                  <path class="tide-wave" d="M0,34 Q8,30 16,34 Q24,38 32,34 Q40,30 48,34 Q56,38 64,34 L64,60 L0,60Z" fill="rgba(196,162,162,0.25)"/>
+                  <path class="tide-wave-2" d="M0,34 Q8,31 16,34 Q24,37 32,34 Q40,31 48,34 Q56,37 64,34" fill="none" stroke="rgba(201,169,110,0.35)" stroke-width="1"/>
+                </g>
+                <circle class="tide-particle" cx="20" cy="22" r="2" fill="rgba(201,169,110,0.7)"/>
+                <circle class="tide-particle-2" cx="38" cy="18" r="1.5" fill="rgba(196,162,162,0.6)"/>
+                <line class="tide-surface" x1="8" y1="33" x2="52" y2="33" stroke="rgba(201,169,110,0.2)" stroke-width="0.5" stroke-dasharray="3 3"/>
+              </svg>
+            </span>
+            <span class="for-text">For emotional exhaustion you don't post about</span>
+          </li>
         </ul>
       </div>
-      <div class="promise-block reveal reveal-delay-2">
-        <p class="promise-text">Sera <em>understands</em>. Sera predicts. Sera stays.</p>
-        <div class="promise-trio">
-          <span>Clarity brings calm</span>
-          <span>Patterns bring peace</span>
-          <span>Timing brings trust</span>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -401,8 +482,8 @@
       </div>
     </div>
     <p class="before-statement reveal reveal-delay-2">
-      Not because it's magic.<br>
-      Because it's built on <strong>your blueprint</strong> — computed, precise, and real.
+      <!-- Not because it's magic.<br>
+      Because it's built on <strong>your blueprint</strong> — computed, precise, and real. -->
     </p>
   </div>
 </section>
@@ -413,9 +494,12 @@
 <section class="logo-feature">
   <div class="logo-feature-inner">
     <p class="logo-feature-quote reveal reveal-delay-1">
-      "This isn't intuition.<br>It's <em>intelligence</em> — built around you."
+      <!-- "This isn't intuition.<br>It's <em>intelligence</em> — built around you." -->
+       Not because it's magic.<br>
+      Because it's built on <em>your blueprint</em>
+
     </p>
-    <p class="logo-feature-sub reveal reveal-delay-2">Private · Precise · Pattern-based</p>
+    
   </div>
 </section>
 
@@ -426,12 +510,9 @@
   <div class="final-bg"></div>
   <div class="final-label reveal">Unlock your emotional OS</div>
   <h2 class="final-title reveal reveal-delay-1">Know yourself<br>before you <em>react.</em></h2>
-  <p class="final-sub reveal reveal-delay-2">Private. Precise. Pattern-based. Built on real Vedic computation.</p>
+  <p class="final-sub reveal reveal-delay-2">Private. Precise. Built on real Vedic computation.</p>
   <div class="final-tags reveal reveal-delay-2">
-    <span class="tag">Private</span>
-    <span class="tag">Precise</span>
-    <span class="tag">Pattern-based</span>
-    <span class="tag">Vedic foundation</span>
+
   </div>
   <div class="hero-btns reveal reveal-delay-3">
     <a href="#" class="btn-primary">Coming Soon for iOS</a>
@@ -476,6 +557,14 @@
   </div>
 </div>
 
-<script src="js/script.js"></script>
+<!-- AMBIENT BACKGROUND MUSIC -->
+<audio id="bgMusic" loop preload="auto" playsinline>
+  <source src="assets/audio/enlightenment.mp3" type="audio/mpeg">
+</audio>
+<button id="musicToggle" class="music-toggle" aria-label="Toggle background music" title="Toggle background music">
+  ♪ Sound: Off
+</button>
+
+<script src="js/script.js?v=20260304f"></script>
 </body>
 </html>
